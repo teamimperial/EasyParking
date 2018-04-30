@@ -345,5 +345,9 @@ footer .copyright {
   padding: 25px 35px;
 }
 #map {
-  height: 100%;
+  height: 90%;
+}
+
+.container{
+  width: auto;
 }
