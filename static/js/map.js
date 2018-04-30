@@ -4,9 +4,32 @@
 var map;
 
 var Parkings = [
-    ['PLVision', 49.808653, 24.015698, "plvilion.html" ],
-    ['Forum Lviv', 49.850037, 24.024078, "forum.html" ]
+    {
+        name: 'PLVision',
+        lat: 49.808653,
+        lng: 24.015698,
+        url: "plvilion.html"
+    },
+    {
+        name: 'Forum Lviv',
+        lat: 49.850037,
+        lng: 24.024078,
+        url: "forum.html"
+    }
 ];
+
+var Locations;
+$.ajax({
+    url: 'https://my-json-server.typicode.com/podorozhnik/testapi/location',
+    type: "get",
+    dataType: "json",
+    async: false,
+
+    success: function(data) {
+        Locations = data;
+    }
+});
+console.log(Locations);
 
 function addYourLocationButton(map, marker) {
     var controlDiv = document.createElement('div');
@@ -90,12 +113,15 @@ function initMap() {
     var image = '/static/img/car.png';
 
     // Add some markers to the map.
-    var markers = Parkings.map(function (location, i) {
+    var markers = Locations.map(function (location, i) {
         return new google.maps.Marker({
-            position: { lat: location[1], lng: location[2]},
-            icon: image,
-            url: location[3],
-            title: location[0]
+            position: { lat: location.lat, lng: location.lng},
+            icon: new google.maps.MarkerImage(image,
+                new google.maps.Size(32, 32),
+                new google.maps.Point(0,0),
+                new google.maps.Point(16,16)),
+            url: location.url,
+            title: location.name
         });
     });
     markers.forEach(function (marker) {
