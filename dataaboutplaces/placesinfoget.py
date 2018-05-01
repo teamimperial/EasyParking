@@ -1,4 +1,4 @@
-from flask import Blueprint, request, abort, jsonify
+from flask import Blueprint, jsonify
 from config.config_mysql import mysql
 
 info_about_places_get = Blueprint('info_about_places_get', __name__)
