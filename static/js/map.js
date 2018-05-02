@@ -20,13 +20,13 @@ var Parkings = [
 
 var Locations;
 $.ajax({
-    url: 'https://my-json-server.typicode.com/podorozhnik/testapi/location',
+    url: "http://easyparking.pythonanywhere.com/get/locations",
     type: "get",
     dataType: "json",
     async: false,
 
     success: function(data) {
-        Locations = data;
+        Locations = data.location;
     }
 });
 console.log(Locations);
