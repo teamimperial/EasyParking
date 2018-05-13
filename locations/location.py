@@ -57,10 +57,16 @@ def near_location(lat, lng):
         lng_db = float(coordinate[1])
         result_sum = pow(pow(float(lat)+lat_db, 2) + pow(float(lng) + lng_db, 2), 0.5)
         id_location = location[0]
-        result = {
-            'result': result_sum,
-            'id_location': id_location
-        }
+        result = [result_sum, id_location]
         results.append(result)
     count = len(results)
-    return jsonify(near_location=results, count=count), 200
+    min_result = []
+    for i in range(1, count):
+        first = results[i-1]
+        second = results[i]
+        if first[0] > second[0]:
+            min_result = second
+        else:
+            min_result = first
+    print(str(min_result))
+    return jsonify('hello'), 200
