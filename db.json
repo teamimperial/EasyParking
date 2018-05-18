@@ -1,0 +1,30 @@
+{
+  "id_parking": "1",
+  "places": [
+    {
+      "id_line": "1",
+      "id_place": "1",
+      "status": "0"
+    },
+    {
+      "id_line": "1",
+      "id_place": "2",
+      "status": "0"
+    },
+    {
+      "id_line": "1",
+      "id_place": "3",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "4",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "5",
+      "status": "1"
+    }
+  ]
+}
