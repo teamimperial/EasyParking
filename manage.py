@@ -1,6 +1,5 @@
-from flask import Flask, render_template, send_from_directory, jsonify
+from flask import Flask, render_template, send_from_directory
 from dataaboutplaces.placesinfoset import info_about_places_set
-from dataaboutplaces.placesinfoget import info_about_places_get
 from locations.location import info_about_location
 from config.config_app import SECRET_KEY
 
@@ -24,9 +23,7 @@ def send_js(path):
 
 
 app.register_blueprint(info_about_places_set)
-app.register_blueprint(info_about_places_get)
 app.register_blueprint(info_about_location)
 
-
 if __name__ == '__main__':
-    app.run(debug=True, port=7080)
+    app.run(debug=True, port=8000)
