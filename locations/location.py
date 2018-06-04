@@ -41,7 +41,7 @@ def get_all_location():
             'name': location_name,
             'lat': float(lat),
             'lng': float(lng),
-            'url': url
+            'url': "/location/" + url
         }
         response_address.append(address)
     return jsonify(location=response_address), 200

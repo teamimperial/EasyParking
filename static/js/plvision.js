@@ -11,7 +11,7 @@ var Places;
 */
 
 $.ajax({
-    url: "/EasyParking/db.json",
+    url: "https://easyparking.pythonanywhere.com/get/info/1",
     type: "get",
     dataType: "json",
     async: false,

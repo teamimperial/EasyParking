@@ -30,6 +30,11 @@ def send_js(path):
     return send_from_directory('static', path)
 
 
+@app.route('/location/<html>')
+def redirect_to_html(html):
+    return render_template(html), 200
+
+
 app.register_blueprint(info_about_places_set)
 app.register_blueprint(info_about_location)
 
