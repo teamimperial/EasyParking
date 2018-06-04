@@ -51,3 +51,27 @@ def get_info_about(id_parking):
 @info_about_places_set.route('/get/all/info')
 def get_all_info():
     return str(info_about_places)
+
+
+class SetInfoAboutPlace:
+    def __init__(self):
+        pass
+
+    @classmethod
+    def set_info_about_places(cls, id_device, status):
+        place = [id_device, status]
+        if len(info_about_places) == 0:
+            info_about_places.append(place)
+        else:
+            value = 0
+            for place_saved in info_about_places:
+                id_device_saved = place_saved[0].split('.')
+                id_device_split = id_device.split('.')
+                if int(id_device_saved[0]) == int(id_device_split[0]) \
+                        and int(id_device_saved[1]) == int(id_device_split[1]) \
+                        and int(id_device_saved[2]) == int(id_device_split[2]):
+                    place_saved[1] = status
+                    value = 1
+                    break
+            if value == 0:
+                info_about_places.append(place)

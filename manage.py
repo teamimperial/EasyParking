@@ -1,5 +1,5 @@
-from flask import Flask, render_template, send_from_directory, request, redirect
-from dataaboutplaces.placesinfoset import info_about_places_set
+from flask import Flask, render_template, send_from_directory, request, redirect, jsonify
+from dataaboutplaces.placesinfoset import info_about_places_set, SetInfoAboutPlace
 from locations.location import info_about_location
 from config.config_app import SECRET_KEY
 
@@ -33,6 +33,12 @@ def send_js(path):
 @app.route('/location/<html>')
 def redirect_to_html(html):
     return render_template(html), 200
+
+
+@app.route('/set/info/test/<id_device>/<status>')
+def set_info_test(id_device,status):
+    SetInfoAboutPlace.set_info_about_places(id_device, status)
+    return jsonify("OK"), 200
 
 
 app.register_blueprint(info_about_places_set)
