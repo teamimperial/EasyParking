@@ -1,0 +1,150 @@
+{
+  "id_parking": "1",
+  "places": [
+    {
+      "id_line": "1",
+      "id_place": "1",
+      "status": "0"
+    },
+    {
+      "id_line": "1",
+      "id_place": "2",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "3",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "4",
+      "status": "0"
+    },
+    {
+      "id_line": "1",
+      "id_place": "5",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "6",
+      "status": "1"
+    },
+    {
+      "id_line": "1",
+      "id_place": "7",
+      "status": "0"
+    },
+    {
+      "id_line": "2",
+      "id_place": "1",
+      "status": "1"
+    },
+    {
+      "id_line": "2",
+      "id_place": "2",
+      "status": "1"
+    },
+    {
+      "id_line": "2",
+      "id_place": "3",
+      "status": "0"
+    },
+    {
+      "id_line": "2",
+      "id_place": "4",
+      "status": "0"
+    },
+    {
+      "id_line": "2",
+      "id_place": "5",
+      "status": "1"
+    },
+    {
+      "id_line": "2",
+      "id_place": "6",
+      "status": "0"
+    },
+    {
+      "id_line": "2",
+      "id_place": "7",
+      "status": "1"
+    },
+    {
+      "id_line": "3",
+      "id_place": "1",
+      "status": "0"
+    },
+    {
+      "id_line": "3",
+      "id_place": "2",
+      "status": "1"
+    },
+    {
+      "id_line": "3",
+      "id_place": "3",
+      "status": "1"
+    },
+    {
+      "id_line": "3",
+      "id_place": "4",
+      "status": "0"
+    },
+    {
+      "id_line": "3",
+      "id_place": "5",
+      "status": "1"
+    },
+    {
+      "id_line": "3",
+      "id_place": "6",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "1",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "2",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "3",
+      "status": "0"
+    },
+    {
+      "id_line": "4",
+      "id_place": "4",
+      "status": "0"
+    },
+    {
+      "id_line": "4",
+      "id_place": "5",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "6",
+      "status": "0"
+    },
+    {
+      "id_line": "4",
+      "id_place": "7",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "8",
+      "status": "1"
+    },
+    {
+      "id_line": "4",
+      "id_place": "9",
+      "status": "1"
+    }
+  ]
+}

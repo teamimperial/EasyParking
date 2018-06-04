@@ -20,7 +20,7 @@ var Parkings = [
 
 var Locations;
 $.ajax({
-    url: "http://easyparking.pythonanywhere.com/get/locations",
+    url: "https://easyparking.pythonanywhere.com/get/locations",
     type: "get",
     dataType: "json",
     async: false,
